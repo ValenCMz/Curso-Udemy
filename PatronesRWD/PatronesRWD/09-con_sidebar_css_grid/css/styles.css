@@ -48,3 +48,19 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media only screen and (min-width: 768px){
+    .con-sidebar{
+        display: grid;
+        /* para q sea al reves seria 1fr y 3fr y cambimos el grid column en el aside */
+        grid-template-columns: 3fr 1fr;
+        column-gap: 4rem;
+        /* le va a decir a css grid q le deje a el, el acomodo, pero en columnas en este caso */
+        grid-auto-flow: column;
+    }
+
+    aside{
+        grid-column: 2/3;
+       
+    }
+}

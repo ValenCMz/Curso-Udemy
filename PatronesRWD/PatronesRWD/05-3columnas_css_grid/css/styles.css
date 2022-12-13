@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media only screen and (min-width: 768px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: "izquierda contenido derecha";
+        grid-template-columns: 1fr 3fr 1fr;
+        /* para q el flujo del grid sea solo columnas y no me cree rows automaiticas */
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+
+    .contenido-principal{
+        grid-area: contenido;
+    }
+
+    .sidebar-1{
+        grid-area: izquierda;
+    }
+}

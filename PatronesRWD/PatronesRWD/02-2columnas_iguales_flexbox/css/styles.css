@@ -39,3 +39,20 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media only screen and (min-width: 768px){
+    .contenedor{
+        display: flex;
+        /* lo que tiene usar gap para separar es que tiene poco soporte */
+        gap: 2rem;
+    }
+}
+
+.padre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elementos{
+    flex: 0 0 calc(50% - 1rem);
+}

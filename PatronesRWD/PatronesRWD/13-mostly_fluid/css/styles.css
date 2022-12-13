@@ -37,3 +37,15 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+
+/* Va variando los margenes dependiendo del tamaño maximo, va a fluir muy bien todo el contenido, a la imagen hay q darselo a parte */
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
