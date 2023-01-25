@@ -4,7 +4,7 @@
 //declaraciond e un array vacio
 const numerosVacio = [];
 
-const numeros = [2,4,5,6];
+const numeros = [2,4,5,6,5];
 
 console.log(numeros);
 
@@ -33,3 +33,38 @@ console.log("recorriendo for comun")
 for(let i = 0; i<numeros.length;i++){
     console.log(numeros[i]);
 }
+
+//agregar al final del array (desventaja: modificar el array original)
+//no muy comun, ya que es necesario saber cuanto mide el array
+numeros[5] = 60;
+
+console.log(numeros);
+
+//Se usa mas, pero no es muy recomendado modificar el array original
+numeros.push(70);
+console.log(numeros);
+
+//agregar el -10 al array pero lo agrega al inicio
+numeros.unshift(-10);
+console.log(numeros);
+
+
+//eliminar elementos de un array (desventaja: modificar el array original)
+
+// console.log(meses);
+// //elimina el ultimo elemento del array
+// meses.pop();
+// console.log(meses);
+// //elimina el primer elemento del array
+// meses.shift();
+// console.log(meses);
+//se coloca la posicion donde queremos q borre y cuantos a partir de ahi
+meses.splice(1, 1);
+console.log(meses);
+
+//Rest Operator o Spread Operator
+
+//lo mejor es crear un nuevo arreglo y copiarlo con Rest Operator, y tambien le agregamos mayo al final (simula el push)
+const nuevoArregloPush = [...meses, 'Mayo'];
+const nuevoArregloUnshift = ['Mayo',...meses]; //simula el Unsifht
+console.log(nuevoArreglo);
